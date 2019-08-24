@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: threadiostaion
+Version: 1.0.0
+Summary: 3DS FBI remote install tool with GUI
+Home-page: https://github.com/Phoenixkaze/3aDioStation
+Author: GarliCat
+Author-email: phoenixkaze@live.com
+License: UNKNOWN
+Description: # 3aDioStation
+        A 3DS FBI remote install tool written in Python.
+        It's a GUI implementation of FBI servefiles.
+        
+        # Usage
+        This tool requires Python 3, download [here](https://www.python.org) if you haven't installed.
+        Make sure your 3DS and your computer running this tool have connected to the same LAN.
+        Luanch FBI on your 3DS and select remote install, you will see your 3DS'IP on your screen.
+        Click Browse to select the file you want to install, **surported formats are.cia, .tik, .cetk, or .3dsx**.
+        Input your 3DS's IP in the text box labelled Your 3DS's IP.
+        Click luanch to starting the server.
+        FBI will pop up to ask if you want to receive URL, choose yes.
+        And your remote installation will start :).
+        Once the installation is down you can click Stop to shutdown the server or just exit the application.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GPL License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

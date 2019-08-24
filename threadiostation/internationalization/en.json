@@ -1,0 +1,28 @@
+{
+    "filetip": "Please select the file you want to install (.cia, .tik, .cetk, .3dsx）",
+    "browsebtn": "Browse",
+    "launchbtn": "Launch",
+    "stopbtn": "Stop",
+    "3dsip":"3DS's IP",
+    "port": "Port",
+    "fileerrormsg": {
+        "title": "Hey!",
+        "msg": "The file format are not surported, try another one."
+    },
+    "nofilemsg": {
+        "title": "Hmmmm",
+        "msg": "No file has been selected."
+    },
+    "connectionerrormsg": {
+        "title": "Error",
+        "msg": "Exception: "
+    },
+    "iperrormsg":{
+        "title":"Hey!",
+        "msg":"There's something wrong with your IP"
+    },
+    "3dsiperrormsg":{
+        "title":"Hey",
+        "msg":"Please check your 3DS's IP"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "filetip": "请选择要安装的文件（.cia, .tik, .cetk, .3dsx）",
+    "browsebtn": "浏览",
+    "launchbtn": "启动",
+    "stopbtn": "停止",
+    "3dsip":"3DS的IP",
+    "port": "端口",
+    "fileerrormsg": {
+        "title": "嘿！",
+        "msg": "并不支持这种格式的文件，再好好看一下提示？"
+    },
+    "nofilemsg": {
+        "title": "嗯。。。",
+        "msg": "你还没有选择文件！"
+    },
+    "connectionerrormsg": {
+        "title": "错误",
+        "msg": "发生错误："
+    },
+    "iperrormsg":{
+        "title":"嘿！",
+        "msg":"你输入的IP好像有问题"
+    },
+    "3dsiperrormsg":{
+        "title":"嘿！",
+        "msg":"请检查一下输入的3DS的IP"
+    }
+}
