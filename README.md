@@ -1,5 +1,5 @@
 # README in other languages
-* [English](./README-en.md)
+* [English](./README-EN.md)
 
 # 3aDioStation
 使用Python开发的GUI远程安装工具。
@@ -8,13 +8,21 @@
 
 # 使用方法
 使用时需要安装Python 3，如果你还没有安装过，请到[这里](https://www.python.org)下载并安装。
+
 确保3DS和电脑连接到同一个局域网之下。
+
 启动FBI，选择Remote Install（远程安装），屏幕上会显示你的3DS的IP。
+
 点击浏览选择要安装的文件，**支持的格式为.cia, .tik, .cetk, .3dsx**。
+
 在3DS IP的输入框内填入3DS的IP。
+
 点击启动按钮启动服务器。
+
 FBI会提示是否从该服务器接受URL，选择是。
+
 然后就开始安装叻:)
+
 安装完成后点击停止关闭服务器或者直接退出也行。
 
 # 关于本地化
