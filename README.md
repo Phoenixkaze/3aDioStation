@@ -13,6 +13,8 @@
 
 启动FBI，选择Remote Install（远程安装），屏幕上会显示你的3DS的IP。
 
+运行threadiostation目录下的gui.py。
+
 点击浏览选择要安装的文件，**支持的格式为.cia, .tik, .cetk, .3dsx**。
 
 在3DS IP的输入框内填入3DS的IP。
