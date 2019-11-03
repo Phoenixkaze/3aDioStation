@@ -40,20 +40,21 @@ def launch():
         server.shutdown()
     thread = threading.Thread(target=serve, args=(stopEvent,))
     thread.start()
-    # try:
-    #     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    #     sock.connect((_3dsIp.get(), 5000))
-    #     sock.sendall(struct.pack('!L', len(payloadBytes)) + payloadBytes)
-    #     def rec(stopE: Event):
-    #         while len(sock.recv(1)) < 1 and not stopE.isSet():
-    #             time.sleep(0.05)
-    #             sock.close()
-    #     t = threading.Thread(target=rec, args=(stopEvent,))
-    #     t.start()
-    # except Exception as e:
-    #     messagebox.showerror("Error", 'An error occurred: ' + str(e))
-    #     server.shutdown()
-    #     sock.close()
+    try:
+        payloadBytes = (f"{ip.get()}:{port.get()}/" + quote(os.path.basename(filePath.get()))).encode('ascii')
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.connect((_3dsIp.get(), 5000))
+        sock.sendall(struct.pack('!L', len(payloadBytes)) + payloadBytes)
+        def rec(stopE: Event):
+            while len(sock.recv(1)) < 1 and not stopE.isSet():
+                time.sleep(0.05)
+                sock.close()
+        t = threading.Thread(target=rec, args=(stopEvent,))
+        t.start()
+    except Exception as e:
+        messagebox.showerror("Error", 'An error occurred: ' + str(e))
+        server.shutdown()
+        sock.close()
 
 def stop():
     if server:
@@ -66,7 +67,6 @@ def stop():
 def selectFile():
     global payloadBytes
     filePath.set(filedialog.askopenfilename(filetypes=[('cia files','*.cia'), ('3dsx file','*.3dsx')]))
-    payloadBytes = (f"{ip.get()}:{port.get()}/" + quote(os.path.basename(filePath.get()))).encode('ascii')
     directory = os.path.dirname(filePath.get())
     if directory != ".":
         os.chdir(directory)

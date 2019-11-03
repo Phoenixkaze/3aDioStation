@@ -6,15 +6,14 @@ import os
 A simple way to localize the tool.
 """
 def localizeToDict(path):
-    with open(path) as file:
+    with open(path, encoding='utf-8') as file:
         return json.loads(''.join(file.read()))
 
 def setupLocalization():
     lang = locale.getdefaultlocale()[0]
-    path = './threadiostation/internationalization/' + lang + '.json'
-    print(path)
+    path = './internationalization/' + lang + '.json'
     if os.path.isfile(path):
         return localizeToDict(path)
     else:
-        return localizeToDict('./threadiostation/internationalization/en.json')
+        return localizeToDict('./internationalization/en.json')
 
